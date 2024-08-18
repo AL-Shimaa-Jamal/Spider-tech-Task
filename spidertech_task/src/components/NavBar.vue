@@ -2,9 +2,9 @@
   <div class="main  fixedNav">
     <!-- logo and language  -->
     <div
-      class="logo-lang d-flex justify-content-between align-items-center p-3" >
+      class="logo-lang d-flex justify-content-between align-items-center p-2" >
       <div class="logo">
-        <img src="/Logo.svg" alt="logo" />
+        <img src="/Logo.svg" alt="logo" width="90%" />
       </div>
       <div class="lang">
         <select name="Language" id="">
@@ -14,7 +14,7 @@
       </div>
     </div>
     <!-- links and media links -->
-    <div class="nav d-flex justify-content-between ms-5 me-5 ">
+    <div class="nav d-flex justify-content-between ms-3 me-3 ">
       <div class="d-flex ">
         <ul class="list-unstyled  " v-for="rout in Routers" :key="rout.name">
           <li>
@@ -63,8 +63,11 @@ export default {
 <style scoped>
 .fixedNav {
   position: fixed;
-  z-index: 1;
-  width: 100vw;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 2px -2px gray; 
 }
 select{
   border: none;

@@ -41,8 +41,8 @@ const router = createRouter({
       }
     },
     {
-      path: '/contact us',
-      name: 'contact us',
+      path: '/contactUs',
+      name: 'contactUs',
       component: ContactUs,
       meta:{
         title:"Contact Us"
