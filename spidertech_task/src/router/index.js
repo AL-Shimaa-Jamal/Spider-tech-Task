@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LandingPage from '@/views/LandingPage.vue'
-import About from '@/views/About.vue'
+import About from '../views/About.vue'
 import Services from '@/views/Services.vue'
 import Partenar from '@/views/Partenar.vue'
 import ContactUs from '@/views/ContactUs.vue'
@@ -49,8 +49,19 @@ const router = createRouter({
       }
     },
    
-  ]
-});
+  ],
+    scrollBehavior(to, from, savedPosition) {
+      if (to.hash) {
+        return {
+          el: to.hash,
+          behavior: 'smooth',
+        };
+      } else {
+        return { top: 0 };
+      }
+    },
+  })
+
 
 
 export default router
