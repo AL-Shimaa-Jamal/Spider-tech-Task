@@ -3,7 +3,7 @@
     <div class="d-none d-lg-block">
       <img src="/image 26.svg" alt="" />
     </div>
-    <div class="text-center ">
+    <div class="text-center info ">
       <h2 class="d-block">
         Enhancing everything related to women's charm and allure is our mission.
       </h2>
@@ -47,5 +47,14 @@ transition: all .4s ease-in-out;
 .btn:hover{
 background-color: rgb(174, 208, 238);
 transform: scale(1.2,1.2);
+}
+@media screen and (max-width:960px) {
+  .info{
+    width:100% !important;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+  }
 }
 </style>
