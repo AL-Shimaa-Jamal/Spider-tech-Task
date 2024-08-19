@@ -49,6 +49,10 @@ background-color: rgb(174, 208, 238);
 transform: scale(1.2,1.2);
 }
 @media screen and (max-width:960px) {
+  .main{
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding-bottom: 30px;
+  }
   .info{
     width:100% !important;
     display: flex;
@@ -56,5 +60,10 @@ transform: scale(1.2,1.2);
     align-items:center ;
     flex-direction: column;
   }
+  h2 {
+  font-size: 29px;
+  width: 70%;
+
+}
 }
 </style>
