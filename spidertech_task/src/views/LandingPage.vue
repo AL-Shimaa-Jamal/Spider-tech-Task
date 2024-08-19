@@ -1,17 +1,17 @@
 <template>
   <div class="main w-100 mt-2">
-    <div>
+    <div class="d-none d-lg-block">
       <img src="/image 26.svg" alt="" />
     </div>
-    <div class="text-center">
-      <h2 class="d-bloc">
+    <div class="text-center ">
+      <h2 class="d-block">
         Enhancing everything related to women's charm and allure is our mission.
       </h2>
-      <router-link to="/contactUs" class="btn  ">
+      <a href="/contactUs" class="btn  ">
         Contact us
-      </router-link>
+      </a>
     </div>
-    <div>
+    <div class="d-none d-lg-block">
       <img src="/image 25.svg" alt="" />
     </div>
   </div>
