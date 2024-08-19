@@ -114,4 +114,9 @@ a img:hover {
   transform: scale(1.2, 1.2);
   box-shadow: 5px 5px 10px gainsboro;
 }
+@media screen and (max-width:820px) {
+  .logo{
+    width: 35%;
+  }
+}
 </style>
